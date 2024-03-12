@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        h1{
+            color:blue;
+            text-align: center;
+        }
+        body{
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+
+<html>
+    <body>
+        <h1 align="center">REGISTER</h1>
+        <div align="center">
+        <form onsubmit="return validateform()" action="registersuces.html">
+            <label for="name">Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="name" name="usename" required><br><span id = "usermsg" style="color:red"></span><br><br>
+            <label for="pwd">Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="password" id="pswd" name="password" required><br><span id = "passmsg" style="color:red"></span><br><br>
+            <label for="cpwd">Confirm Password:&nbsp;&nbsp;</label>
+            <input type="password" id="cspwd" name="conformpassword" required><br><span id = "cpassmsg" style="color:red"></span><br><br>
+            <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email" id="email" name="emailaddr" required><br><br>
+            <label for="mobile">Mobile Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input  type="text" id="mobile" name="91num" value="+91" size="1" required>
+            <input type="text" id="mobiletext" name="num" size="15"><br><span id = "mobile_msg" style="color:red"></span><br><br>
+            <label for="dob">DateOfBirth:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="date" id="dob" name="dob"><br><br>
+            <label for="addr">Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type="text" id="addr" name="address"><br><br>
+            <label for="gender">Gender:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="radio" id="male" name="gender" >
+            <label for="male">Male</label><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="female" name="gender" >
+            <label for="female">Female</label>
+             <br>
+            <input type="submit"  value="Register"><br><br>
+            <a href="loginpage.html">Back to login page</a><br><br>
+            <a href="home.html">Go to home</a>
+        </form>
+    </div>
+    </body>
+</html>
